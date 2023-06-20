@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
+             xmlns:Syncfusion="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms"   
+             x:Class="task5.MainPage">
+
+
+    
+
+        <StackLayout>
+        <Frame BackgroundColor="Black"
+               Padding="5" CornerRadius="0">
+            <Label Text="Add Drawings" HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="15"/>
+        </Frame>
+
+        <Label x:Name="RemotePathLabel" Text="RemotePathLabel"></Label>
+
+        <Button Text = "take Image" Clicked = "Button_Clicked" Margin = "0" CornerRadius = "20"
+                WidthRequest = "30" HeightRequest = "50"
+                VerticalOptions = "Start"
+                HorizontalOptions = "Fill"
+                TextColor="Black"
+                BackgroundColor = "LightGray"
+                TranslationY = "-1" >
+        </Button >
+          
+            
+        <Syncfusion:SfImageEditor x:Name="ImgEditor" HeightRequest="650" WidthRequest="300"  ></Syncfusion:SfImageEditor>
+
+    </StackLayout>
+
+</ContentPage>
